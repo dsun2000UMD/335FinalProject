@@ -1,0 +1,29 @@
+<!-- DO NOT MODIFY THIS FILE -->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Application Confirmation</title>
+</head>
+
+<body>
+	<h1>Applicants Data</h1>
+	<div>
+		<strong>Name: </strong><%- name %><br>
+		<strong>Email Address: </strong><%- email %><br>
+		<strong>GPA: </strong><%- gpa %><br>
+		<strong>Background Information: </strong><br><%- backgroundInformation %><br>
+		<hr>
+		<p><strong>Task completed at <span id='date-time'></span></strong> </p>
+		<hr>
+		<a href="/">HOME</a>
+	</div>
+</body>
+
+<script>
+	var dt = new Date();
+	document.getElementById('date-time').innerHTML=dt;
+</script>
+
+</html>
