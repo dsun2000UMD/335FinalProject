@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Activity <Form></Form></title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>Bored and want something to do?</h1>
+
+	<form action="/" method="post">
+		<fieldset>
+    <legend>Player Information</legend>
+			<label><strong>Name: </strong><input type="text" name="name"/></label>
+      <br><br>
+			<label><strong>Number of Activities: </strong><input type="number" id="activity" name="activity"
+				min="1" max="10"></label>
+		</fieldset>
+
+		<br>
+		<input type="reset" />
+		<input type="submit" value="Display Activities"/>
+	</form>
+
+</body>
+
+</html>
