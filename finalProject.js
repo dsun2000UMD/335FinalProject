@@ -106,12 +106,17 @@ app.post("/find", (request, response) => {
         let filter = { name: n };
         const result = await client.db(databaseAndCollection.db)
             .collection(databaseAndCollection.collection)
-            .findOne(filter);
-        r = result;
-        if (result) {
+            .find(filter);
+        //r = result;
+        let r = await result.toArray();
+
+        if (r) {
+            let a = '';
+            r.forEach(i => { a += i.activities });
+
             let v = {
-                name: r.name,
-                activities: r.activities
+                name: n,
+                activities: a
             }; // variable for template
             response.render("activities", v); // render variables in template
         } else {
@@ -121,6 +126,8 @@ app.post("/find", (request, response) => {
             }; // variable for template
             response.render("activities", v); // render variables in template
         }
+
+
     }
 
     main().catch(console.error);
