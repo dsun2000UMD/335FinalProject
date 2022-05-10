@@ -3,8 +3,16 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Activity <Form></Form></title>
-	<link rel="stylesheet" href="style.css">
+	<title>Activity</title>
+	<style>
+		h1 {
+			color: blue;
+		}
+
+		legend {
+			color: red;
+		}
+	</style>
 </head>
 
 <body>
@@ -12,16 +20,26 @@
 
 	<form action="/" method="post">
 		<fieldset>
-    <legend>Player Information</legend>
-			<label><strong>Name: </strong><input type="text" name="name"/></label>
-      <br><br>
-			<label><strong>Number of Activities: </strong><input type="number" id="activity" name="activity"
-				min="1" max="10"></label>
+			<legend>User Information</legend>
+			<label><strong>Name: </strong><input type="text" name="name" /></label>
+			<br><br>
+			<label><strong>Number of Activities: </strong><input type="number" id="activity" name="activity" min="1"
+					max="10"></label>
 		</fieldset>
 
 		<br>
 		<input type="reset" />
-		<input type="submit" value="Display Activities"/>
+		<input type="submit" value="Display Activities" />
+	</form>
+
+	<h2>Want to see your previous activities?</h2>
+	<form action="/find" method="post">
+		<fieldset>
+			<legend>User Information</legend>
+			<label><strong>Name: </strong><input type="text" name="name" /></label>
+		</fieldset>
+		<br>
+		<input type="submit" value="Submit" />
 	</form>
 
 </body>
