@@ -1,0 +1,97 @@
+<!-- <!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Activity</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+	<h1>Bored and want something to do?</h1>
+
+	<form action="/" method="post">
+		<fieldset>
+			<legend>User Information</legend>
+			<label><strong>Name: </strong><input type="text" name="name" /></label>
+			<br><br>
+			<label><strong>Number of Activities: </strong><input type="number" id="activity" name="activity" min="1"
+					max="10"></label>
+		</fieldset>
+
+		<br>
+		<input type="reset" />
+		<input type="submit" value="Display Activities" />
+	</form>
+
+	<h2>Want to see your previous activities?</h2>
+	<form action="/find" method="post">
+		<fieldset>
+			<legend>User Information</legend>
+			<label><strong>Name: </strong><input type="text" name="name" /></label>
+		</fieldset>
+		<br>
+		<input type="submit" value="Submit" />
+	</form>
+
+</body>
+
+</html> -->
+
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Activity</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="login-box">
+      <h1>Bored and want something to do?</h1>
+
+      <form action="/" method="post">
+        <label><strong>Name: </strong><input type="text" name="name" /></label>
+        <br><br>
+        <label><strong>Number of Activities: </strong><input type="number" id="activity" name="activity" min="1" max="10"></label>
+
+        <br><br>
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <input type="reset" />
+        </a>
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <input type="submit" value="Display Activities" />
+        </a>
+
+      </form>
+      <br>
+
+      <hr>
+
+      <h1>Want to see your previous activities?</h1>
+      <form action="/find" method="post">
+        <label><strong>Name: </strong><input type="text" name="name" /></label>
+
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <input type="submit" value="Check" />
+        </a>
+      </form>
+    </div>
+
+  </body>
+
+</html>
+
